@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">Homework1</string>
-    <string name="calculate">CALCULATE</string>
-
-    <string-array name="names">
+    <string name="app_name">homewok01</string>
+    <string name="value_1">Value 1:</string>
+    <string name="value_2">Value 2:</string>
+    <string name="operator">Operator:</string>
+    <string name="calculate">Calculate</string>
+    <string-array name="array">
         <item>+</item>
         <item>-</item>
         <item>*</item>
