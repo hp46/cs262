@@ -1,6 +1,5 @@
 package edu.calvin.cs262.hp46;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -8,7 +7,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.preference.PreferenceManager;
 
 import android.view.View;
 import android.view.Menu;
@@ -40,18 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        PreferenceManager.setDefaultValues(this,
-                R.xml.pref_headers, false);
-        PreferenceManager.setDefaultValues(this,
-                R.xml.pref_notification, false);
-        PreferenceManager.setDefaultValues(this,
-                R.xml.pref_account, false);
-        SharedPreferences sharedPref = PreferenceManager
-                .getDefaultSharedPreferences(this);
-        String marketPref = sharedPref
-                .getString("sync_frequency", "-1");
-        displayToast(marketPref);
-
     }
 
     @Override
@@ -77,11 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.action_contacts:
                 displayToast(getString(R.string.action_contact_message));
-                return true;
-            case R.id.action_settings:
-                Intent settingsIntent = new Intent(this,
-                        SettingsActivity.class);
-                startActivity(settingsIntent);
                 return true;
             default:
                 // Do nothing
