@@ -1,0 +1,9 @@
+Is the service RESTful? If not, why not? If so, what key features make it RESTful.
+	RESTful is an API that uses HTTPS request to GET, PUT, POST and DELETE. 
+
+What endpoints implement actions that are idempotent? nullipotent?
+Endpoints implements are the end of a commmunication channel
+Idempotent - multiple performance same after one time.
+Nullipotent - no side effect, meaning  perfoming multiple times will be the same as if performing it 0 times.
+Therefore in a RESTful service get, put, delete are idempotent because there needs to be a initial call but afterwards there is no difference.
+While posting queries is a nullipotent because it returns data without altering the data structure.

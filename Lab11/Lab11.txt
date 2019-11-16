@@ -1,0 +1,24 @@
+Lab 11
+
+Cheferone 
+
+MainActivity.java
+	- removed unused import
+	- removed unused variable 
+	- wrong Block comment style 
+		- // two line to -> /* */
+
+Inconsistancy in the file Naming 
+	- Food_Ingredient -> FoodIngredient
+
+FoodIngredient.java
+	Local Variable name weren't lowerCamelCase and there was a one character parameter name (q -> quan)
+	
+NetworkUtils.java
+	- fixed Block comment
+
+CustomAdapter.java & Spalshscreen & Food.java
+	- Nonempty blocks: K & R style
+
+IngredientTable.java & Splashscreen.java & every javaclass
+	- inconsistance format of {}
